@@ -1,17 +1,19 @@
 package com.awscourse.entity;
 
+import java.io.Serializable;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @NoArgsConstructor
 @Getter @Setter
-public class DatailedMachine extends Machine {
+public class DatailedMachine extends Machine implements Serializable{
 
+	private static final long serialVersionUID = 1L;
+	
 	private String javaVersion;
-	
 	private String javaVendor;
-	
 	private String javaVendorUrl;
 
 	public DatailedMachine(String ip, String name, String os, String architecture, String osVersion, String javaVersion, String javaVendor, String javaVendorUrl) {
