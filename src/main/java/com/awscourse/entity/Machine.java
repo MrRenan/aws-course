@@ -9,11 +9,12 @@ import lombok.Setter;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter @Setter
+@Getter
+@Setter
 public class Machine implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	
+
 	private String ip;
 	private String name;
 	private String os;
@@ -27,6 +28,54 @@ public class Machine implements Serializable {
 		this.architecture = architecture;
 		this.osVersion = osVersion;
 	}
+
+	public Machine() {
+
+	}
+
+	public String getIp() {
+		return ip;
+	}
+
+	public void setIp(String ip) {
+		this.ip = ip;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getOs() {
+		return os;
+	}
+
+	public void setOs(String os) {
+		this.os = os;
+	}
+
+	public String getArchitecture() {
+		return architecture;
+	}
+
+	public void setArchitecture(String architecture) {
+		this.architecture = architecture;
+	}
+
+	public String getOsVersion() {
+		return osVersion;
+	}
+
+	public void setOsVersion(String osVersion) {
+		this.osVersion = osVersion;
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
 	
-	
+
 }
